@@ -1,0 +1,69 @@
+div {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: black;
+}
+
+h1 {
+  color: #efefef;
+  margin: 0;
+  margin-left: 100px;
+  margin-top: 200px;
+  width: 750px;
+  font-size: 48pt;
+  font-weight: bold;
+  opacity: 0;
+  -webkit-animation: reveal 2s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+     -moz-animation: reveal 2s ease-in 1 normal forwards;
+       -o-animation: reveal 2s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+          animation: reveal 2s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+}
+
+p {
+  color: #efefef;
+  margin: 0;
+  margin-left: 100px;
+  font-size: 14pt;
+  font-weight: 100;
+  opacity: 0;
+  -webkit-animation: reveal 2s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+     -moz-animation: reveal 2s ease-in 1 normal forwards;
+       -o-animation: reveal 2s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+          animation: reveal 2s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+  -webkit-animation-delay: 500ms;
+     -moz-animation-delay: 500ms;
+       -o-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+
+ul {
+  padding: 0;
+  margin-top: 75px;
+  margin-left: 80px;
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+}
+
+a {
+  font-size: 14pt;
+  font-weight: 500;
+  padding:  10px 20px;
+  display: block;
+  color: #efefef;
+  text-decoration: none;
+  transition:color .2s ease-out, background 0.3s ease-in;
+}
+
+a:hover {
+  color: black;
+  background-color: #efefef;
+  transition:color .2s ease-out, background 0.3s ease-in;
+}

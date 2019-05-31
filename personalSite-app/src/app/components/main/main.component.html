@@ -1,13 +1,37 @@
-<a routerLink="/">Home</a>
-
-<nav>
-  <ul>
-    <li>
-      <a routerLink="portfolio">Portfolio</a>
-      <a routerLink="projects">Projects</a>
-      <a routerLink="resume">Resume</a>
-    </li>
-  </ul>
-
-  <router-outlet></router-outlet>
-</nav>
+<div class="container">
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li>
+        <a routerLink="/">Home</a>
+      </li>
+      <li routerLinkActive="active">
+        <a routerLink="portfolio">Portfolio</a>
+      </li>
+      <li routerLinkActive="active">
+        <a routerLink="projects">Projects</a>
+      </li>
+      <li routerLinkActive="active">
+        <a routerLink="resume">Resume</a>
+      </li>
+      <li routerLinkActive="active">
+        <a routerLink="about">About</a>
+      </li>
+    </ul>
+  </nav>
+  
+  <!-- Main Body -->
+  <div class="routerContainer">
+    <router-outlet></router-outlet>
+  </div>
+  
+  
+  <!-- Footer -->
+  <footer>
+    <a href="#" target="_blank"><img src="./assets/icons/facebookIcon.png" alt="Facebook Icon"></a>
+    <a href="https://www.instagram.com/willpower3309/?hl=en" target="_blank"><img src="./assets/icons/instagramIcon.png" alt="Instagram Icon"></a>
+    <a href="https://twitter.com/willpower3309" target="_blank"><img src="./assets/icons/twitterIcon.png" alt="Twitter Icon"></a>
+    <a href="https://github.com/WillPower3309" target="_blank"><img src="./assets/icons/githubIcon.png" alt="Instagram Icon"></a>
+    <a href="https://www.linkedin.com/in/william-mckinnon/" target="_blank"><img src="./assets/icons/linkedinIcon.png" alt="Instagram Icon"></a>
+  </footer>
+</div>
