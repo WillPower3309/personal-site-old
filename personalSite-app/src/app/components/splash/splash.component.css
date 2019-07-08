@@ -12,10 +12,10 @@ div {
 h1 {
   color: #efefef;
   margin: 0;
-  margin-left: 100px;
-  margin-top: 200px;
+  margin-left: 15vw;
+  margin-top: 25vh;
   width: 750px;
-  font-size: 48pt;
+  font-size: 7vh;
   font-weight: bold;
   opacity: 0;
   -webkit-animation: reveal 2s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
@@ -27,8 +27,8 @@ h1 {
 p {
   color: #efefef;
   margin: 0;
-  margin-left: 100px;
-  font-size: 14pt;
+  margin-left: 15vw;
+  font-size: 2vh;
   font-weight: 100;
   opacity: 0;
   -webkit-animation: reveal 2s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
@@ -43,8 +43,8 @@ p {
 
 ul {
   padding: 0;
-  margin-top: 75px;
-  margin-left: 80px;
+  margin-top: 10vh;
+  margin-left: 13.5vw;
   list-style-type: none;
 }
 
@@ -53,7 +53,7 @@ li {
 }
 
 a {
-  font-size: 14pt;
+  font-size: 2vh;
   font-weight: 500;
   padding:  10px 20px;
   display: block;
@@ -66,4 +66,10 @@ a:hover {
   color: black;
   background-color: #efefef;
   transition:color .2s ease-out, background 0.3s ease-in;
+}
+
+.socialIcons {
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
