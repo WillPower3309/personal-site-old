@@ -149,7 +149,7 @@ footer img {
 }
 
 footer img:hover {
-  -webkit-filter: brightness(70%);
+  filter: brightness(70%);
   transition: 1s ease;
 }
 
@@ -161,13 +161,48 @@ footer p {
 /*******************************
     Mobile
 *******************************/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
+
+  body {
+    overflow: hidden;
+  }
+
   .splash {
     height: 100vh;
   }
 
+  .splash h1 {
+    padding: 50px 0;
+    font-size: auto;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .splash p {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+  }
+
+  nav {
+    display: none;
+  }
+
   .portfolio {
-    height: 1000px;
+    height: auto;
+  }
+
+  .portfolio h3 {
+    padding-left: 0;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 80%;
+    text-align: center;
+  }
+
+  footer {
+    margin-top: 30px;
   }
 }
 
