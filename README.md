@@ -1,2 +1,2 @@
 # willmckinnon.com
-Personal website source written in Angular 7
+Personal website source hosted in firebase
