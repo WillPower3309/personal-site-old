@@ -1,0 +1,154 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.panel {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.splash {
+  background-color: black;
+}
+
+.splash h1 {
+    color: #efefef;
+    text-align: left;
+    margin: 0;
+    padding-left: 15vw;
+    padding-top: 25vh;
+    width: 750px;
+    font-size: 7vh;
+    font-weight: bold;
+    opacity: 0;
+    -webkit-animation: reveal 2s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+       -moz-animation: reveal 2s ease-in 1 normal forwards;
+         -o-animation: reveal 2s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+            animation: reveal 2s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+}
+
+.splash p {
+    color: #efefef;
+    margin: 0;
+    margin-left: 15vw;
+    font-size: 2vh;
+    font-weight: 100;
+    opacity: 0;
+    -webkit-animation: reveal 2s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+       -moz-animation: reveal 2s ease-in 1 normal forwards;
+         -o-animation: reveal 2s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+            animation: reveal 2s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+    -webkit-animation-delay: 500ms;
+       -moz-animation-delay: 500ms;
+         -o-animation-delay: 500ms;
+            animation-delay: 500ms;
+}
+  
+ul {
+    padding: 0;
+    margin-top: 10vh;
+    margin-left: 13.5vw;
+    list-style-type: none;
+}
+  
+li {
+    display: inline-block;
+}
+  
+li a {
+    font-size: 2vh;
+    font-weight: 500;
+    padding:  10px 20px;
+    display: block;
+    color: #efefef;
+    text-decoration: none;
+    transition:color .2s ease-out, background 0.3s ease-in;
+}
+  
+a:hover {
+    color: black;
+    background-color: #efefef;
+    transition:color .2s ease-out, background 0.3s ease-in;
+    cursor: pointer;
+}
+
+.arrows {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+}
+
+.arrows span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    margin: -10px;
+    animation: arrow 2s infinite;
+}
+
+.arrows span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+
+.arrows span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+
+.portfolio h1 {
+  text-align: center;
+  padding: 50px;
+}
+
+
+/*******************************
+    Animations
+*******************************/
+
+
+@keyframes reveal {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(100%);
+         -moz-transform: translateY(100%);
+           -o-transform: translateY(100%);
+              transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+         -moz-transform: translateY(0);
+           -o-transform: translateY(0);
+              transform: translateY(0);
+    }
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
+}
